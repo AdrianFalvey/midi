@@ -1,0 +1,23 @@
+{
+  "source_file": "source/2026 MIDI Map - Sheet1.csv",
+  "generated_for": "MIDI interactive map v1",
+  "feature_count": 16,
+  "project_count": 3,
+  "overlay_count": 13,
+  "coordinate_method": "Latitude and longitude extracted from the destination encoded in each supplied Google Maps short-link redirect.",
+  "coordinate_order_in_geojson": "longitude, latitude",
+  "incomplete_source_fields": {
+    "missing_bangla_names": 7,
+    "missing_icon_descriptions": 2,
+    "missing_detail_text": 4,
+    "missing_japanese_names": 16,
+    "missing_images": 16
+  },
+  "review_requirements": [
+    "Confirm all point locations with the campaign team.",
+    "Replace generic Mosque names with specific names where available.",
+    "Supply reviewed Bangla and Japanese translations.",
+    "Supply approved images, captions, rights information and alt text before enabling photos.",
+    "Treat road, salt-farm and environmental point locations as representative until their full extents are digitised."
+  ]
+}

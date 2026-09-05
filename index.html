@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the indicative area and places that could be affected by MIDI fossil fuel build-out plans in coastal Bangladesh.">
+  <title>MIDI affected area map</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/leaflet/leaflet.js" defer></script>
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#map-details">Skip to map details</a>
+  <main class="map-app" aria-labelledby="map-title">
+    <header class="map-header">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">Fossil Free Chattogram</p>
+        <h1 id="map-title" data-i18n="title">What could MIDI affect?</h1>
+        <p class="map-intro" data-i18n="intro">Explore the indicative affected area and nearby communities, infrastructure and environmental features.</p>
+      </div>
+      <button class="reset-button" id="reset-view" type="button" data-i18n="reset">Reset map</button>
+    </header>
+
+    <section class="map-toolbar" aria-label="Map layers" data-i18n-aria="layers">
+      <fieldset>
+        <legend data-i18n="layers">Map layers</legend>
+        <label><input type="checkbox" data-layer="zone" checked> <span class="legend-swatch legend-swatch--zone"></span><span data-i18n="zoneLayer">Indicative affected area</span></label>
+        <label><input type="checkbox" data-layer="projects" checked> <span class="legend-dot legend-dot--project">P</span><span data-i18n="projectsLayer">Fossil fuel projects</span></label>
+        <label><input type="checkbox" data-layer="community" checked> <span class="legend-dot legend-dot--community">C</span><span data-i18n="communityLayer">Community facilities</span></label>
+        <label><input type="checkbox" data-layer="environment" checked> <span class="legend-dot legend-dot--environment">N</span><span data-i18n="environmentLayer">Environment and land use</span></label>
+        <label><input type="checkbox" data-layer="transport" checked> <span class="legend-dot legend-dot--transport">R</span><span data-i18n="transportLayer">Roads and bridges</span></label>
+      </fieldset>
+    </section>
+
+    <div id="map-status" class="map-status" role="status" aria-live="polite" data-i18n="loading">Loading map data…</div>
+
+    <section class="map-layout">
+      <div class="map-stage">
+        <div id="map" role="application" tabindex="0" data-i18n-aria="mapLabel" aria-label="Interactive map of the indicative MIDI affected area"></div>
+        <p class="map-caveat" data-i18n="caveat">Indicative affected area redrawn from campaign artwork; not an official surveyed boundary.</p>
+      </div>
+
+      <aside id="map-details" class="details-panel" aria-labelledby="details-heading" tabindex="-1">
+        <div class="details-panel__heading">
+          <p class="details-kicker" id="details-category" data-i18n="detailsKicker">Map details</p>
+          <button id="close-details" class="close-button" type="button" data-i18n-aria="close" aria-label="Close details">×</button>
+        </div>
+        <h2 id="details-heading" data-i18n="detailsTitle">Select a place</h2>
+        <div id="details-body">
+          <p data-i18n="detailsPrompt">Choose a marker or affected area to see its information and source.</p>
+        </div>
+      </aside>
+    </section>
+
+    <div id="map-error" class="map-error" hidden role="alert">
+      <p data-i18n="error">The map data could not be loaded.</p>
+      <button id="retry" type="button" data-i18n="retry">Try again</button>
+    </div>
+
+    <footer class="map-footer">
+      <p id="translation-note" data-i18n="translationNote">Some place names and descriptions remain in English until reviewed translations are supplied.</p>
+      <p><a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener noreferrer" data-i18n="reportMapIssue">Report a basemap issue</a></p>
+    </footer>
+  </main>
+</body>
+</html>

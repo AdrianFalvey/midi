@@ -1,0 +1,17 @@
+id,category,icon,name_en,name_bn,name_ja,description_en,description_bn,description_ja,latitude,longitude,source_url,accuracy,reviewed
+matarbari-coal-power-plant,project,project,Matarbari Coal Power Plant,মাতারবাড়ি কয়লা বিদ্যুৎ কেন্দ্র,,Matarbari 1 coal power plant (1.2 GW),,,21.7005206,91.8848107,https://maps.app.goo.gl/wAiL9vgSeRhNJwbd8,point,false
+moheshkhali-hill-reserve-forest,environment,trees,Moheshkhali Hill Reserve Forest,মহেশখালী পাহাড় সংরক্ষিত বন,,,,,21.6188023,91.9588022,https://maps.app.goo.gl/BdztA2qZetr5Tczr6,point,false
+adinath-temple,worship,hindu-temple,Adinath Temple,শ্রীশ্রী আদিনাথ মন্দির,,,,,21.5280655,91.9748347,https://maps.app.goo.gl/mERfNHPSA8ymWtbB9,point,false
+sonadia-mangrove-forest,environment,trees,Sonadia Mangrove Forest,সোনাদিয়া ম্যানগ্রোভ ফরেস্ট,,,,,21.533675,91.8634674,https://maps.app.goo.gl/E9uB8aq1CRGG1m8L6,point,false
+moheshkhali-floating-lng-terminal,project,fsru,Moheshkhali floating LNG Terminal (MLNG),মহেশখালী ফ্লোটিং এলএনজি টার্মিনাল (এমএলএনজি),,Moheshkhali FSRU. Owner and operator: Excelerate Energy.,,,21.5363521,91.8190436,https://maps.app.goo.gl/NjyhGoFGsqjUghab6,point,false
+summit-floating-lng-terminal,project,fsru,Summit floating LNG Terminal,,,Summit FSRU. Owner: Summit (22% owned by JERA) and Mitsubishi. Operator: Excelerate Energy.,,,21.554924,91.798469,https://maps.app.goo.gl/L5SppiNEsApuxouAA,point,false
+moheshkhali-coxs-bazar-road-bridges,transport,road,Moheshkhali – Cox's Bazar Road and Bridges,,,,,,21.498004,91.977334,https://maps.app.goo.gl/JvVBbecxAHRR7j89A,representative_point,false
+matarbari-high-school,school,school,Matarbari High School,মাতারবাড়ি উচ্চ বিদ্যালয়,,School,,,21.7323753,91.8971197,https://maps.app.goo.gl/uJBXSKw56nowwEdn7,point,false
+bara-maheshkhali-government-primary-school,school,school,Bara Maheshkhali Government Primary School,বড় মহেশখালী সরকারী প্রাথমিক বিদ্যালয়,,School,,,21.5423146,91.9472874,https://maps.app.goo.gl/ZLisVKSABf6CNBZ89,point,false
+moheshkhali-island-high-school,school,school,Moheshkhali Island High School,মহেশখালী দ্বীপ হাইস্কুল,,School,,,21.5339161,91.9434438,https://maps.app.goo.gl/YXt6ub7JMsk5g2Jt9,point,false
+primary-school-disaster-shelter,school,school-shelter,Primary School and Disaster Shelter,দক্ষিণমগডেইল সরকারি প্রাথমিক বিদ্যালয় ও বহুমুখী দুর্যোগ আশ্রয়কেন্দ্র মহেশখালী,,School and disaster shelter,,,21.7173187,91.8879528,https://maps.app.goo.gl/pHi3nuR1xvNsFKJY9,point,false
+mosque-mohorakata,worship,mosque,Mosque,,,Mosque,,,21.5956644,91.900155,https://maps.app.goo.gl/91AVnUxMxQazYeCL8,point,false
+mosque-panirchhara,worship,mosque,Mosque,,,Mosque,,,21.5722282,91.9259433,https://maps.app.goo.gl/Mq4ESUoYewYWRqLD7,point,false
+mosque-dailarpara,worship,mosque,Mosque,,,Mosque,,,21.5219318,91.9391821,https://maps.app.goo.gl/e2hiMVuqCXo5Jp3L9,point,false
+mosque-maijpara,worship,mosque,Mosque,,,Mosque,,,21.7270018,91.88536,https://maps.app.goo.gl/TpvtD58bzpgm26pC8,point,false
+salt-farms,agriculture,salt,Salt farms,,,Salt farms,,,21.7652108,91.8475059,https://maps.app.goo.gl/AV5f9nTrRFwtBhbu9,representative_point,false

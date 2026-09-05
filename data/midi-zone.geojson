@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "name": "MIDI indicative affected area",
+  "crs_note": "RFC 7946 WGS84 longitude/latitude coordinates",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "midi-zone-north",
+      "properties": {
+        "id": "midi-zone-north",
+        "category": "zone",
+        "name_en": "Northern indicative affected area",
+        "name_bn": "উত্তরের সম্ভাব্য ক্ষতিগ্রস্ত এলাকা",
+        "name_ja": "北部の影響想定区域",
+        "description_en": "Approximate area around Ujantia, Demusia and Majherpara interpreted from the campaign artwork.",
+        "description_bn": "প্রচারাভিযানের চিত্র থেকে ব্যাখ্যা করা উজানটিয়া, ডেমুশিয়া ও মাঝেরপাড়া এলাকার আনুমানিক সীমা।",
+        "description_ja": "キャンペーン資料から読み取った、Ujantia、Demusia、Majherpara周辺のおおよその区域です。",
+        "affected_places": ["Ujantia", "Demusia", "Majherpara"],
+        "source": "Campaign artwork: English_Map.jpg",
+        "source_url": "https://fossilfreechattogram.com/wp-content/uploads/2026/08/MIDI-Chattogram-region-map.svg",
+        "accuracy": "indicative",
+        "reviewed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.912,21.768],[91.927,21.806],[91.964,21.816],[91.984,21.793],[91.974,21.761],[91.941,21.747],[91.917,21.753],[91.912,21.768]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "midi-zone-central-north",
+      "properties": {
+        "id": "midi-zone-central-north",
+        "category": "zone",
+        "name_en": "Central-northern indicative affected area",
+        "name_bn": "মধ্য-উত্তরের সম্ভাব্য ক্ষতিগ্রস্ত এলাকা",
+        "name_ja": "中北部の影響想定区域",
+        "description_en": "Approximate area around Badarkhali and Dhalghata interpreted from the campaign artwork.",
+        "description_bn": "প্রচারাভিযানের চিত্র থেকে ব্যাখ্যা করা বদরখালী ও ধলঘাটা এলাকার আনুমানিক সীমা।",
+        "description_ja": "キャンペーン資料から読み取った、BadarkhaliとDhalghata周辺のおおよその区域です。",
+        "affected_places": ["Badarkhali", "Dhalghata"],
+        "source": "Campaign artwork: English_Map.jpg",
+        "source_url": "https://fossilfreechattogram.com/wp-content/uploads/2026/08/MIDI-Chattogram-region-map.svg",
+        "accuracy": "indicative",
+        "reviewed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.85,21.691],[91.865,21.735],[91.908,21.753],[91.955,21.729],[91.952,21.687],[91.92,21.651],[91.876,21.652],[91.85,21.691]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "midi-zone-central",
+      "properties": {
+        "id": "midi-zone-central",
+        "category": "zone",
+        "name_en": "Central indicative affected area",
+        "name_bn": "মধ্যাঞ্চলের সম্ভাব্য ক্ষতিগ্রস্ত এলাকা",
+        "name_ja": "中部の影響想定区域",
+        "description_en": "Approximate area around Kalarmarchara, Hoanak, Amavasyakhali and Mohori Guna interpreted from the campaign artwork.",
+        "description_bn": "প্রচারাভিযানের চিত্র থেকে ব্যাখ্যা করা কালারমারছড়া, হোয়ানক, অমাবস্যাখালী ও মোহরী গুনা এলাকার আনুমানিক সীমা।",
+        "description_ja": "キャンペーン資料から読み取った、Kalarmarchara、Hoanak、Amavasyakhali、Mohori Guna周辺のおおよその区域です。",
+        "affected_places": ["Kalarmarchara", "Hoanak", "Amavasyakhali", "Mohori Guna"],
+        "source": "Campaign artwork: English_Map.jpg",
+        "source_url": "https://fossilfreechattogram.com/wp-content/uploads/2026/08/MIDI-Chattogram-region-map.svg",
+        "accuracy": "indicative",
+        "reviewed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.842,21.604],[91.857,21.66],[91.9,21.686],[91.935,21.667],[91.93,21.609],[91.902,21.575],[91.861,21.572],[91.842,21.604]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "midi-zone-south",
+      "properties": {
+        "id": "midi-zone-south",
+        "category": "zone",
+        "name_en": "Southern indicative affected area",
+        "name_bn": "দক্ষিণের সম্ভাব্য ক্ষতিগ্রস্ত এলাকা",
+        "name_ja": "南部の影響想定区域",
+        "description_en": "Approximate area around Panir Sara and Sonadia interpreted from the campaign artwork.",
+        "description_bn": "প্রচারাভিযানের চিত্র থেকে ব্যাখ্যা করা পানির ছড়া ও সোনাদিয়া এলাকার আনুমানিক সীমা।",
+        "description_ja": "キャンペーン資料から読み取った、Panir SaraとSonadia周辺のおおよその区域です。",
+        "affected_places": ["Panir Sara", "Sonadia"],
+        "source": "Campaign artwork: English_Map.jpg",
+        "source_url": "https://fossilfreechattogram.com/wp-content/uploads/2026/08/MIDI-Chattogram-region-map.svg",
+        "accuracy": "indicative",
+        "reviewed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.806,21.481],[91.821,21.548],[91.854,21.583],[91.895,21.568],[91.916,21.525],[91.901,21.474],[91.865,21.447],[91.826,21.454],[91.806,21.481]]]
+      }
+    }
+  ]
+}

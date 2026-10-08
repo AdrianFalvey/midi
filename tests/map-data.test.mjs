@@ -23,12 +23,14 @@ test("language fallbacks can always use an English name", async () => {
   }
 });
 
-test("affected polygons are explicitly indicative and unreviewed", async () => {
+test("affected polygons come from the confirmed KML boundary file", async () => {
   const zone = await readJson("data/midi-zone.geojson");
+  assert.equal(zone.features.length, 6);
   for (const feature of zone.features) {
-    assert.equal(feature.properties.accuracy, "indicative");
-    assert.equal(feature.properties.reviewed, false);
-    assert.match(feature.properties.source, /Campaign artwork/);
+    assert.equal(feature.properties.accuracy, "confirmed_boundary");
+    assert.equal(feature.properties.reviewed, true);
+    assert.match(feature.properties.source, /MIDI bangladesh v2\.kml/);
+    assert.match(feature.properties.source_feature_id, /^[A-F0-9]+$/);
   }
 });
 

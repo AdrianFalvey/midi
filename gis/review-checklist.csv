@@ -1,5 +1,7 @@
-feature_id,affected_places,accuracy,reviewer,review_date,status,notes
-midi-zone-north,"Ujantia; Demusia; Majherpara",indicative,,,needs_campaign_review,
-midi-zone-central-north,"Badarkhali; Dhalghata",indicative,,,needs_campaign_review,
-midi-zone-central,"Kalarmarchara; Hoanak; Amavasyakhali; Mohori Guna",indicative,,,needs_campaign_review,
-midi-zone-south,"Panir Sara; Sonadia",indicative,,,needs_campaign_review,
+feature_id,source_feature_id,accuracy,reviewer,review_date,status,notes
+midi-zone-1,03643C568342164B7D4E,confirmed_boundary,,,confirmed_from_supplied_kml,Imported without simplification
+midi-zone-2,0FA07C6C714216C9A0C4,confirmed_boundary,,,confirmed_from_supplied_kml,Imported without simplification
+midi-zone-3,01C489EFC4424621B18F,confirmed_boundary,,,confirmed_from_supplied_kml,Imported without simplification
+midi-zone-4,0885D4835D42462901C8,confirmed_boundary,,,confirmed_from_supplied_kml,Imported without simplification
+midi-zone-5,02ADE5F49C42462F031E,confirmed_boundary,,,confirmed_from_supplied_kml,Imported without simplification
+midi-zone-6,038E5F8010424EEA0CD9,confirmed_boundary,,,confirmed_from_supplied_kml,Imported without simplification

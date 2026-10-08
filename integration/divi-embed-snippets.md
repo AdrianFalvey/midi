@@ -8,7 +8,7 @@ Deploy this directory to `/wp-content/themes/Divi-child/midi-map/`, then replace
 <iframe
   class="midi-map-embed"
   src="/wp-content/themes/Divi-child/midi-map/index.html?lang=en"
-  title="Interactive map of the indicative MIDI affected area"
+  title="Interactive map of the confirmed MIDI affected areas"
   loading="lazy"
   referrerpolicy="strict-origin-when-cross-origin"
 ></iframe>

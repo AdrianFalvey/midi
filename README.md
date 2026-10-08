@@ -2,15 +2,15 @@
 
 This repository contains a deployable, multilingual Leaflet map for the Fossil Free Chattogram microsite. It is designed to run as a same-origin iframe inside a Divi Code module.
 
-## Important limitation
+## Boundary source and limitation
 
-The blue polygons are indicative interpretations of the supplied campaign artwork. They are not official surveyed, cadastral, land-acquisition or statutory MIDI boundaries. All polygons and point content remain marked `reviewed: false` until the campaign team approves them.
+The six blue polygons are the confirmed affected-area boundaries supplied in `MIDI bangladesh v2.kml`. They are no longer interpretations of the campaign artwork. They remain campaign-supplied boundaries rather than cadastral survey boundaries; the map does not calculate or present an authoritative affected acreage.
 
 ## Contents
 
 - `index.html`, `styles.css`, `app.js`, `config.js`: production multi-file map.
 - `data/places.geojson`: 16 normalized points from the supplied spreadsheet links.
-- `data/midi-zone.geojson`: four indicative affected-area polygons.
+- `data/midi-zone.geojson`: six confirmed affected-area polygons imported from the supplied KML.
 - `data/places-normalized.csv`: audit-friendly normalized point table.
 - `data/normalization-report.json`: missing-content and review summary.
 - `gis/midi-map.gpkg`: editable QGIS-compatible source layers.
@@ -39,6 +39,6 @@ The default basemap uses OpenStreetMap's standard raster service. Keep visible a
 
 ## Content updates
 
-Edit the GeoPackage in QGIS for geometry work and preserve WGS84 on export. For copy updates, edit the GeoJSON properties directly or regenerate them from an approved content source. Empty Bangla or Japanese values deliberately fall back to English and display a translation notice.
+Run `npm run import:zones` after replacing `MIDI bangladesh v2.kml`; this imports only the six named Zone polygons and excludes the KML's Google Earth ground overlay. Then rebuild the GeoPackage layer in QGIS or with GDAL, preserving WGS84. For copy updates, edit the GeoJSON properties directly or regenerate them from an approved content source. Empty Bangla or Japanese values deliberately fall back to English and display a translation notice.
 
 No images appear in v1 because the source spreadsheet did not include approved image files, rights information, captions or alt text.

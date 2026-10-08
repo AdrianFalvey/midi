@@ -26,7 +26,7 @@ function validateFeature(feature, collectionName) {
 
 assert(zone.type === "FeatureCollection", "Zone data must be a FeatureCollection");
 assert(places.type === "FeatureCollection", "Places data must be a FeatureCollection");
-assert(zone.features.length === 4, `Expected 4 zone features; received ${zone.features.length}`);
+assert(zone.features.length === 6, `Expected 6 zone features; received ${zone.features.length}`);
 assert(places.features.length === 16, `Expected 16 place features; received ${places.features.length}`);
 
 const allIds = new Set();
@@ -46,7 +46,8 @@ for (const feature of places.features) {
 
 for (const feature of zone.features) {
   assert(feature.geometry.type === "Polygon", `${feature.id}: expected Polygon geometry`);
-  assert(feature.properties.accuracy === "indicative", `${feature.id}: zone must be marked indicative`);
+  assert(feature.properties.accuracy === "confirmed_boundary", `${feature.id}: zone must be marked as a confirmed boundary`);
+  assert(feature.properties.reviewed === true, `${feature.id}: confirmed zone must be marked reviewed`);
   const ring = feature.geometry.coordinates[0];
   assert(ring.length >= 4, `${feature.id}: polygon ring has too few coordinates`);
   assert(JSON.stringify(ring[0]) === JSON.stringify(ring.at(-1)), `${feature.id}: polygon ring is not closed`);
@@ -67,5 +68,5 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${zone.features.length} indicative polygons and ${places.features.length} point features.`);
+  console.log(`Validated ${zone.features.length} confirmed polygons and ${places.features.length} point features.`);
 }
